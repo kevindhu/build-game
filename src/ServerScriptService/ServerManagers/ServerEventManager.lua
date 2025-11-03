@@ -42,7 +42,6 @@ function ServerEventManager:handleRequest(player, req, data)
 
 	local shopManager = user.shopManager
 	local rewardManager = user.rewardManager
-	local punchManager = user.punchManager
 
 	-- USER
 	if req == "userDied" then
@@ -59,10 +58,6 @@ function ServerEventManager:handleRequest(player, req, data)
 		shopManager:tryBuyProduct(data)
 	elseif req == "tryBuyPremium" then
 		shopManager:tryBuyPremium(data)
-
-	-- PUNCHMANAGER
-	elseif req == "tryHitWall" then
-		punchManager:tryHitWall(data)
 	end
 end
 

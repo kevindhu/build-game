@@ -45,12 +45,6 @@ function ClientEventManager:handleRequest(req, data)
 	elseif req == "toggleProductLoading" then
 		ClientMod.shopManager:toggleProductLoading(data)
 
-	-- WALLMANAGER
-	elseif req == "updateWallData" then
-		ClientMod.wallManager:updateWallData(data)
-	elseif req == "updateAllWallData" then
-		ClientMod.wallManager:updateAllWallData(data)
-
 	-- LEADERMANAGER
 	elseif req == "addLeader" then
 		ClientMod.leaderManager:addLeader(data)

@@ -15,9 +15,7 @@ local LoadManagerList = {
 	{ "BadgeManager", "badgeManager" },
 	{ "RewardManager", "rewardManager" },
 	{ "AnalyticsManager", "analyticsManager" },
-	{ "WallManager", "wallManager" },
 	{ "CurrencyManager", "currencyManager" },
-	{ "PunchManager", "punchManager" },
 }
 
 local TickManagerList = {

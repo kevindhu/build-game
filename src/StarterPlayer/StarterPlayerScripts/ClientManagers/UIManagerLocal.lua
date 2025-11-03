@@ -22,11 +22,6 @@ function UIManager:toggleOffAllGUI()
 		if not ClientMod[managerClass] then
 			continue
 		end
-		-- ClientMod[managerClass]:toggle({
-		-- 	newBool = false,
-		-- 	animateClose = false,
-		-- 	noBlur = true,
-		-- })
 	end
 end
 

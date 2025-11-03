@@ -26,9 +26,7 @@ local ClientModuleList = {
 	{ "UserManager", "userManager" },
 	{ "LeaderManager", "leaderManager" },
 
-	{ "WallManager", "wallManager" },
 	{ "CurrencyManager", "currencyManager" },
-	{ "PunchManager", "punchManager" },
 }
 
 function LoadAllModules()

@@ -29,9 +29,6 @@ function MapManager:initFolders()
 
 		-- rigs
 		"UserRigs",
-
-		-- models
-		"Walls",
 	}
 	for _, folderName in pairs(workspaceFolders) do
 		local folder = Instance.new("Folder")

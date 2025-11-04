@@ -27,6 +27,8 @@ local ClientModuleList = {
 	{ "LeaderManager", "leaderManager" },
 
 	{ "CurrencyManager", "currencyManager" },
+
+	{ "PlaceManager", "placeManager" },
 }
 
 function LoadAllModules()
@@ -44,7 +46,7 @@ function LoadAllModules()
 		ClientMod[moduleAlias] = module
 	end
 
-	print(("CLIENT LOAD MODULES: %.2f seconds"):format(os.clock() - startTime))
+	-- print(("CLIENT LOAD MODULES: %.2f seconds"):format(os.clock() - startTime))
 end
 
 function LoadLocalUser()
@@ -56,6 +58,7 @@ end
 
 local TickModuleList = {
 	"userManager",
+	"placeManager",
 }
 local TickRenderModuleList = {
 	"currencyManager",

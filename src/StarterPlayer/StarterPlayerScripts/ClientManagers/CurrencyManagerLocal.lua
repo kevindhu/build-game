@@ -6,7 +6,6 @@ local ClientMod = require(playerScripts.ClientMod)
 
 local currencyGUI = playerGui:WaitForChild("CurrencyGUI")
 local coinsFrame = currencyGUI.LeftFrame.CoinsFrame
-local powerFrame = currencyGUI.TopFrame.PowerFrame
 
 local Common = require(game.ReplicatedStorage.Common)
 local len, routine, wait = Common.len, Common.routine, Common.wait
@@ -46,9 +45,6 @@ function CurrencyManager:tickRender(timeRatio)
 		if itemClass == "Coins" then
 			local coinsString = Common.abbreviateNumber(math.round(newValue), 1)
 			coinsFrame.Title.Text = coinsString
-		elseif itemClass == "Power" then
-			local powerString = Common.abbreviateNumber(math.round(newValue), 1)
-			powerFrame.Title.Text = powerString
 		end
 	end
 end

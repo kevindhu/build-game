@@ -4,7 +4,10 @@ local CurrentCamera = workspace.CurrentCamera
 local DeviceManager = {}
 
 function DeviceManager:init()
-	print("GOT DEVICE: ", self:getDevice())
+	local camera = workspace.CurrentCamera
+	camera:GetPropertyChangedSignal("ViewportSize"):Connect(function()
+		-- print("REFRESHING DEVICE: ", self:getDevice())
+	end)
 end
 
 local GamepadStates = {
